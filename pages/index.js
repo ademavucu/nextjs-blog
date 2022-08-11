@@ -21,7 +21,7 @@ export default function Home() {
         <div className={styles.heroInfo}>
           <h1>N&apos;oublie pas.</h1>
           <h3>Devenir meilleur. Chaque jour.</h3>
-          <p>Le temps passe. N'attends pas pour le moment parfait. Le moment parfait n'existe pas. </p>
+          <p>Le temps passe. N&apos;attends pas pour le moment parfait. Le moment parfait n&apos;existe pas. </p>
         </div>
         <Link href="/posts/FirstPost">
           <button className={styles.btn}>
