@@ -15,7 +15,7 @@ export default function FirstPost() {
         <link rel="icon" type="image/x-icon" href="../../public/Ademo.png"></link>
       </Head>
       <Link href="/">
-        <h1 className={styles.h1}>Adem's blog</h1>
+        <h1 className={styles.h1}>{"Adem's blog"}</h1>
       </Link>
       {posts.map(function (post) {
         const [comment, setComment] = useState(false);
