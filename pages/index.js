@@ -18,11 +18,11 @@ export default function Home() {
         <div className={styles.logo}>Unutma</div>
       </header>
       <section className={styles.hero}>
-        <h1>N&apos;oublie pas.</h1>
-        <h3>Ici, on devient meilleur chaque jour, ensemble.</h3>
-        <p>
-          Que ce soit la santé mentale et physique, gestion personnelle des finances, on apprend ensemble comment être meilleur jour après jour...
-        </p>
+        <div className={styles.heroInfo}>
+          <h1>N&apos;oublie pas.</h1>
+          <h3>Devenir meilleur. Chaque jour.</h3>
+          <p>Le temps passe. N'attends pas pour le moment parfait. Le moment parfait n'existe pas. </p>
+        </div>
         <Link href="/posts/FirstPost">
           <button className={styles.btn}>
             Clique ici pour découvrir le blog

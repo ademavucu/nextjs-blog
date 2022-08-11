@@ -1,12 +1,15 @@
+.post {
+    width: 100%;
+}
 .section {
-    width: 50%;
-    margin: 50px auto;
+    width: 90%;
+    margin: 0px auto;
     font-family: 'Poppins';
-    padding: 10px 50px;
+    padding: 10px 10px;
     border: 1px solid #bbb;
     text-align: justify;
     box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
-    min-width: 600px;
+    max-width: 1024px;
 }
 
 .section h1 {
@@ -22,10 +25,13 @@
     white-space: pre-line;
 }
 
-.h1 {
+.header {
+    display: flex;
+    justify-content: center;
     text-align: center;
+    width: 100%;
+    margin: 10px auto;
     font-family: 'Lobster';
-    margin-bottom: 50px;
     cursor: pointer;
     transition: 0.3s ease;
 }
@@ -89,4 +95,10 @@
 .submitBtn:hover {
     background: #666;
     color: white;
+}
+
+@media (max-width: 768px) {
+    .section {
+    width: 90%;
+    }
 }

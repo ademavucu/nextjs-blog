@@ -6,17 +6,18 @@ import Head from 'next/head';
 
 export default function FirstPost() {
   return (
-    <>
+    <section className={styles.post}>
       <Head>
         <link
           href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins&display=swap"
           rel="stylesheet"
         ></link>
-        <link rel="icon" type="image/x-icon" href="../../public/Ademo.png"></link>
       </Head>
-      <Link href="/">
-        <h1 className={styles.h1}>Adem&apos;s blog</h1>
-      </Link>
+      <header className={styles.header}>
+        <Link href="/">
+          <h1>Adem&apos;s blog</h1>
+        </Link>
+      </header>
       {posts.map(function (post) {
         return (
           <section key={post.id} className={styles.section}>
@@ -26,6 +27,6 @@ export default function FirstPost() {
           </section>
         );
       })}
-    </>
+    </section>
   );
 }
