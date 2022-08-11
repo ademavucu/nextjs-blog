@@ -18,7 +18,6 @@ export default function FirstPost() {
         <h1 className={styles.h1}>Adem&apos;s blog</h1>
       </Link>
       {posts.map(function (post) {
-        const [comment, setComment] = useState(false);
         return (
           <section key={post.id} className={styles.section}>
             <h1>{`${post.id}. ${post.title}`}</h1>
