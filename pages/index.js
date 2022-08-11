@@ -18,14 +18,14 @@ export default function Home() {
         <div className={styles.logo}>Unutma</div>
       </header>
       <section className={styles.hero}>
-        <h1>{"N'oublie pas."}</h1>
-        <h3>{"Ici, on devient meilleur chaque jour, ensemble."}</h3>
+        <h1>N&apos;oublie pas.</h1>
+        <h3>Ici, on devient meilleur chaque jour, ensemble.</h3>
         <p>
-          {"Que ce soit la santé mentale et physique, gestion personnelle des finances, on apprend ensemble comment être meilleur jour après jour..."}
+          Que ce soit la santé mentale et physique, gestion personnelle des finances, on apprend ensemble comment être meilleur jour après jour...
         </p>
         <Link href="/posts/FirstPost">
           <button className={styles.btn}>
-            {"Clique ici pour découvrir le blog"}
+            Clique ici pour découvrir le blog
           </button>
         </Link>
       </section>
