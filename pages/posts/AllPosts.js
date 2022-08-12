@@ -1,10 +1,11 @@
-import Link from 'next/link';
-import { useState, useEffect } from 'react';
-import posts from './posts';
-import styles from '../../styles/FirstPost.module.css';
+import React from "react"
+import blogPosts from './posts.json';
+import styles from '../../styles/AllPosts.module.css';
 import Head from 'next/head';
+import Header from "../../components/Header"
 
-export default function FirstPost() {
+export default function AllPosts() {
+  console.log(blogPosts)
   return (
     <section className={styles.post}>
       <Head>
@@ -13,12 +14,11 @@ export default function FirstPost() {
           rel="stylesheet"
         ></link>
       </Head>
+      <Header/>
       <header className={styles.header}>
-        <Link href="/">
-          <h1>Adem&apos;s blog</h1>
-        </Link>
+        <h1>Adem&apos;s blog</h1>
       </header>
-      {posts.map(function (post) {
+      {blogPosts.map(function (post) {
         return (
           <section key={post.id} className={styles.section}>
             <h1>{`${post.id}. ${post.title}`}</h1>
